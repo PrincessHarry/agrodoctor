@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-+p-&*)6m11o16dblurc!=1a+3$&6z2(!7yix&06nl-fow0(guk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'agrodoctor.onrender.com'
+]
 
 
 # Application definition
