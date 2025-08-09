@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Prediction Result</h1>
+<div>
+  <p><strong>Crop:</strong> {{ prediction.predicted_crop }}</p>
+  <p><strong>Disease:</strong> {{ prediction.predicted_disease }}</p>
+  <p><strong>Confidence:</strong> {{ prediction.confidence_score }}%</p>
+  {% if treatments %}
+    <h3>Treatment</h3>
+    <p><strong>{{ treatments.0.title }}</strong>: {{ treatments.0.description }}</p>
+  {% endif %}
+  {% if crop_tips %}
+    <h3>Crop Tips</h3>
+    <ul>
+      {% for tip in crop_tips %}
+        <li><strong>{{ tip.title }}:</strong> {{ tip.content }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+{% endblock %}

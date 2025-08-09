@@ -1,0 +1,281 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block description %}{{ description }}{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Hero Section -->
+    <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            About AgroDoctor
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Revolutionizing agricultural disease detection with cutting-edge AI technology
+        </p>
+    </div>
+
+    <!-- Mission Section -->
+    <section class="mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    AgroDoctor is dedicated to helping farmers and agricultural professionals identify and treat plant diseases quickly and accurately. Our AI-powered system provides instant disease detection, treatment recommendations, and preventive care tips.
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    By leveraging advanced machine learning algorithms trained on thousands of plant images, we aim to reduce crop losses and improve agricultural productivity worldwide.
+                </p>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                        <span class="text-gray-700">Instant Detection</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                        <span class="text-gray-700">Expert Recommendations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-green-100 to-blue-100 rounded-lg p-8">
+                <div class="text-center">
+                    <i class="fas fa-leaf text-6xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">AI-Powered Agriculture</h3>
+                    <p class="text-gray-600">Supporting sustainable farming practices through technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="mb-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Technology & Innovation</h2>
+            <p class="text-lg text-gray-600">
+                Built with state-of-the-art deep learning technology
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-brain text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Deep Learning</h3>
+                <p class="text-gray-600">
+                    Advanced neural networks trained on the PlantVillage dataset with over 50,000 images across 14 crops and 38 disease classes.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-mobile-alt text-2xl text-green-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile-First</h3>
+                <p class="text-gray-600">
+                    Responsive design optimized for mobile devices, allowing farmers to use the system directly in the field.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-cloud text-2xl text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Cloud-Based</h3>
+                <p class="text-gray-600">
+                    Scalable cloud infrastructure ensuring fast processing and reliable service availability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="mb-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Key Features</h2>
+            <p class="text-lg text-gray-600">
+                Everything you need for effective crop disease management
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="flex items-start">
+                    <div class="bg-green-100 rounded-full p-3 mr-4">
+                        <i class="fas fa-camera text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Image Upload & Analysis</h3>
+                        <p class="text-gray-600">
+                            Upload clear images of affected plant leaves and get instant disease detection with confidence scores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="flex items-start">
+                    <div class="bg-blue-100 rounded-full p-3 mr-4">
+                        <i class="fas fa-pills text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Treatment Recommendations</h3>
+                        <p class="text-gray-600">
+                            Get detailed treatment plans including chemical, organic, and cultural control methods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="flex items-start">
+                    <div class="bg-yellow-100 rounded-full p-3 mr-4">
+                        <i class="fas fa-book text-yellow-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Comprehensive Database</h3>
+                        <p class="text-gray-600">
+                            Access detailed information about crops, diseases, symptoms, and preventive measures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="flex items-start">
+                    <div class="bg-purple-100 rounded-full p-3 mr-4">
+                        <i class="fas fa-chart-line text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">User Dashboard</h3>
+                        <p class="text-gray-600">
+                            Track your prediction history, accuracy rates, and manage your agricultural records.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Crops Section -->
+    <section class="mb-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Supported Crops</h2>
+            <p class="text-lg text-gray-600">
+                Our AI can detect diseases in a wide variety of agricultural crops
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+            <div class="text-center">
+                <div class="bg-green-100 rounded-lg p-4 mb-2">
+                    <i class="fas fa-apple-alt text-2xl text-green-600"></i>
+                </div>
+                <p class="text-sm font-medium">Apple</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-yellow-100 rounded-lg p-4 mb-2">
+                    <i class="fas fa-seedling text-2xl text-yellow-600"></i>
+                </div>
+                <p class="text-sm font-medium">Corn (Maize)</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-purple-100 rounded-lg p-4 mb-2">
+                    <i class="fas fa-wine-glass text-2xl text-purple-600"></i>
+                </div>
+                <p class="text-sm font-medium">Grape</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-orange-100 rounded-lg p-4 mb-2">
+                    <i class="fas fa-lemon text-2xl text-orange-600"></i>
+                </div>
+                <p class="text-sm font-medium">Orange</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-pink-100 rounded-lg p-4 mb-2">
+                    <i class="fas fa-seedling text-2xl text-pink-600"></i>
+                </div>
+                <p class="text-sm font-medium">Peach</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-red-100 rounded-lg p-4 mb-2">
+                    <i class="fas fa-pepper-hot text-2xl text-red-600"></i>
+                </div>
+                <p class="text-sm font-medium">Pepper</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-brown-100 rounded-lg p-4 mb-2">
+                    <i class="fas fa-seedling text-2xl text-yellow-800"></i>
+                </div>
+                <p class="text-sm font-medium">Potato</p>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="{% url 'doctor:crops_list' %}" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors">
+                View All Crops
+            </a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="mb-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Commitment</h2>
+            <p class="text-lg text-gray-600">
+                Dedicated to advancing agricultural technology for a sustainable future
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-globe text-2xl text-green-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Global Impact</h3>
+                <p class="text-gray-600">
+                    Supporting farmers worldwide with accessible, accurate disease detection technology.
+                </p>
+            </div>
+
+            <div class="text-center">
+                <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-leaf text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Sustainable Agriculture</h3>
+                <p class="text-gray-600">
+                    Promoting environmentally friendly farming practices through early disease detection.
+                </p>
+            </div>
+
+            <div class="text-center">
+                <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-users text-2xl text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Community Support</h3>
+                <p class="text-gray-600">
+                    Building a community of farmers, researchers, and agricultural experts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
+        <p class="text-lg text-gray-600 mb-6">
+            Join thousands of farmers who are already using AgroDoctor to protect their crops.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="{% url 'doctor:home' %}" 
+               class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                <i class="fas fa-upload mr-2"></i>Upload Image
+            </a>
+            <a href="{% url 'doctor:contact' %}" 
+               class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                <i class="fas fa-envelope mr-2"></i>Contact Us
+            </a>
+        </div>
+    </section>
+</div>
+{% endblock %} 
