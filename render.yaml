@@ -2,8 +2,8 @@ services:
   - type: web
     name: agrodoctor
     env: python
-    plan: standard
-    region: oregon
+    plan: free
+    region: Singapore (Southeast Asia)
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
